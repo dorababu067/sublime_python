@@ -19,3 +19,30 @@ print(sys.version)
 Press: Ctrl + b
 
 
+-------------------------------------------------------------------------------------------------------------
+
+
+installing visual studio code in ubuntu 
+1) install visual studio.den file in official website
+2) open terminal
+3) type these command 
+    sudo dpkg  -i  dowloded_file name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
