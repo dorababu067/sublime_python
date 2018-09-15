@@ -1,0 +1,29 @@
+
+Deployment of django project
+--------------------------------------------------------
+
+1)Copy the project separte directory
+2)Create virtualenv then activate the virtualenv(pip virtualenv .)
+3)pip instal django and install all required packages for your project 
+4)now run the python manage.py runserver
+5)Quite the server (Ctrl+C)
+6)Go to https://devcenter.heroku.com/articles/getting-started-with-python
+7)pip install pipenv
+8)Download and install Heroku Command Line Interface (CLI)
+9)heroku login (before you must create heroku account)
+10)Now go to https://devcenter.heroku.com/articles/django-app-configuration
+11)Crate Procfile in your project root-directory
+	( web: gunicorn myproject.wsgi )
+12)pipenv install gunicorn
+13)pipenv install django-heroku
+14)Add the following import statement to the top of settings.py:
+		import django_heroku
+15)Then add the following to the bottom of settings.py:
+		# Activate Django-Heroku.
+		django_heroku.settings(locals())
+16)pip freeze > requirements.txt
+17)heroku creat myappname
+18)git init, git add --all , git commit -m 'mymessage'
+19)heroku git:remote -a myappname(adding the remote to my-hereoku application)
+20)git push heroku master
+21)admin pannel not work run migrations(heroku run bash)
